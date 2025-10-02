@@ -1,0 +1,68 @@
+@layout.app({ title: 'Passwords | Accueil' })
+@slot('meta')
+    <meta name="description" content="Bienvenue sur Passwords, votre gestionnaire de mots de passe sécurisé et facile à utiliser. Protégez vos informations personnelles avec notre application fiable." />
+@endslot
+@slot('main')
+    <main class="flex-grow flex items-center justify-center py-12">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <!-- Hero Section -->
+            <div class="mb-12">
+                <div class="inline-flex items-center justify-center w-20 h-20 bg-sky-100 rounded-full mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                    </svg>
+                </div>
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-sky-600 to-blue-600 bg-clip-text text-transparent">
+                    Passwords
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto">
+                    Gérez vos mots de passe en toute sécurité avec notre gestionnaire simple, moderne et efficace. 
+                    Protégez vos comptes et simplifiez votre vie numérique.
+                </p>
+            </div>
+
+            <!-- Features -->
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white/10 backdrop-blur rounded-xl p-6 border border-white/20">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Sécurisé</h3>
+                    <p class="text-gray-300">Vos données sont protégées avec les dernières technologies de chiffrement</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur rounded-xl p-6 border border-white/20">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Rapide</h3>
+                    <p class="text-gray-300">Accédez à vos mots de passe en un clic, où que vous soyez</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur rounded-xl p-6 border border-white/20">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Simple</h3>
+                    <p class="text-gray-300">Interface intuitive et moderne pour une expérience utilisateur optimale</p>
+                </div>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col gap-4 justify-center items-center">
+                <a href="/register" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-sky-600 to-blue-600 hover:from-sky-700 hover:to-blue-700 text-white font-semibold rounded-xl text-lg transition-all duration-300 transform hover:scale-105 shadow-xl">
+                    Créer un compte
+                </a>
+                <a href="/login" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-sky-600 to-blue-600 hover:from-sky-700 hover:to-blue-700 text-white font-semibold rounded-xl text-lg transition-all duration-300 transform hover:scale-105 shadow-xl">
+                        Se connecter
+                    </a>
+            </div>
+        </div>
+    </main>
+@end
+    
+@end
