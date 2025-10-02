@@ -9,7 +9,7 @@ export default class AuthController {
     async loginPost({ auth, request, response, session }: HttpContext) {
         const { email, password } = request.only(['email', 'password'])
         try {
-            const user = await User.findByOrFail('email', email)
+            const user = await User.verifyCredentials(email, password)
             await auth.use('web').login(user)
             session.flash('success', 'Login successful!')
             return response.redirect('/')
